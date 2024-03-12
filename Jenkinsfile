@@ -24,7 +24,7 @@ pipeline{
         {
             steps{
                 echo "========executing B========"
-                cd Learning-all-WebProject
+                // cd Learning-all-WebProject
             }
             post{
                 always{
@@ -42,9 +42,7 @@ pipeline{
         {
             steps{
                 echo "========executing C========"
-                dotnet --version
-                dotnet clean
-                dotnet build
+                dotnetBuild project: 'example', sdk: 'dotnet8.0', workDirectory: 'Learning-all-WebProject'
             }
             post{
                 always{

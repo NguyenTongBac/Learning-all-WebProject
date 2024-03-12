@@ -37,7 +37,7 @@ pipeline{
                 }
             }
         }
-        stage("go direction")
+        stage("build dotnet")
         {
             steps{
                 echo "========executing C========"

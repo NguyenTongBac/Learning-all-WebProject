@@ -24,7 +24,6 @@ pipeline{
         {
             steps{
                 echo "========executing B========"
-                // cd Learning-all-WebProject
             }
             post{
                 always{
